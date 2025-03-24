@@ -11,18 +11,15 @@
             background: url('https://raw.githubusercontent.com/blue711/my-portfolio/main/hero-bg.jpg') no-repeat center center/cover;
             font-family: Arial, sans-serif;
         }
-        .header, .projects, .contact {
+        .header, .skills-card, .contact {
             background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(1px);
+            backdrop-filter: blur(5px);
             border-radius: 10px;
             padding: 30px;
             margin: 20px;
             text-align: center;
             color: rgb(9, 9, 9);
             font-weight: bold;
-        }
-        .h2{
-            color: black;
         }
         .skills {
             display: flex;
@@ -38,23 +35,14 @@
             border-radius: 5px;
             color: rgb(18, 17, 17);
         }
-        .project-card {
-            background: rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            color: rgb(15, 14, 14);
-        }
         .contact-btn {
             background-color: #28a745;
             border: none;
             color: white;
             cursor: pointer;
         }
-        .contact-btn:hover, .contact-btn:focus, .contact-btn:active {
-            background-color: #28a745 !important;
-            box-shadow: none !important;
-            outline: none !important;
+        .contact-btn:hover {
+            background-color: #218838;
         }
         .social-icons a {
             margin: 0 10px;
@@ -71,40 +59,15 @@
     </header>
     
     <div class="container my-5">
-        <h2 class="text-center " style="color: black;" >Skills</h2>
-        <div class="skills">
-            <div>HTML & CSS</div>
-            <div>Bootstrap & JavaScript</div>
-            <div>PHP & MySQLi</div>
-            <div>AJAX & Laravel</div>
-            <div>OOP & Database Management</div>
-            <div>WordPress Development</div>
-        </div>
-    </div>
-    
-    <div class="projects container">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <h4>Project 1</h4>
-                    <p>It's a demo of Html , Css , Boostrap </p>
-                    <a href="https://github.com/blue711/my-portfolio/blob/main/templet.html" class="btn " style="background: rgba(10, 82, 105, 0.5);">View Project</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <h4>Project 2</h4>
-                    <p>It's a demo of Ajax , Laravel , Ooop , JavaScript</p>
-                    <a href="./ADMIN/index.php" class="btn " style="background: rgba(10, 82, 105, 0.5);">View Project</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <h4>Project 3</h4>
-                    <p>It's a demo of Php , Database , Mysqli </p>
-                    <a href="./USER/index.php" class="btn " style="background: rgba(10, 82, 105, 0.5);">View Project</a>
-                </div>
+        <div class="skills-card">
+            <h2 class="text-center" style="color: black;">My Skills</h2>
+            <div class="skills">
+                <div>HTML & CSS</div>
+                <div>Bootstrap & JavaScript</div>
+                <div>PHP & MySQLi</div>
+                <div>AJAX & Laravel</div>
+                <div>OOP & Database Management</div>
+                <div>WordPress Development</div>
             </div>
         </div>
     </div>
@@ -112,7 +75,7 @@
     <div class="contact text-center">
         <h2>Contact Me</h2>
         <button class="btn btn-lg contact-btn" onclick="showContact()">Show Contact</button>
-        <p id="contact-info" class="mt-3" style="display: none; " >Phone: 0334-1701364</p>
+        <p id="contact-info" class="mt-3" style="display: none;">Phone: 0334-1701364</p>
         <div class="social-icons mt-3">
             <a href="#"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
